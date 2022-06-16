@@ -3,6 +3,7 @@ This repository contains scripts for building statically linked **iw** and **wpa
 ### Tested build environments:
 * Alpine Linux edge armhf (running on Android under Linux Deploy)
 * Alpine Linux edge aarch64 (running on Android under Linux Deploy)
+* ubuntu20.04  sudo apt install -y gcc-aarch64-linux-gnu
 ## How to build
 ### Install requirements (Alpine Linux edge)
 ```
@@ -22,4 +23,7 @@ LIBS += -lcrypto -lssl
 ```
 #### iw and wpa_supplicant both (excluding openssl)
 `make`  
+### ubuntu20.4 build
+./build_libnl.sh
+./build_wpas.sh
 ### Once built, the executables will be located in the `binaries/` folder

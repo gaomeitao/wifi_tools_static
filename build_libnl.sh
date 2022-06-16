@@ -22,7 +22,7 @@ if ! [ -f "${prefix}/lib/libnl-3.a" ] ; then
 	cd "$libnl_dir"
 	./configure \
 		--enable-static --disable-shared \
-        --disable-cli --prefix=$prefix
+        --disable-cli --prefix=$prefix --host=aarch64-linux-gnu-gcc
 	make -j`nproc --all`
 	make install
     )

@@ -2,7 +2,7 @@
 set -e
 
 libnl_tgz="libnl-3.5.0.tar.gz"
-libnl_url="https://github.com/thom311/libnl/releases/download/libnl3_5_0/$libnl_tgz"
+libnl_url="https://github.com/thom311/libnl/releases/tag/libnl3_5_0/$libnl_tgz"
 libnl_dir="${libnl_tgz%.tar.gz}"
 
 prefix="`pwd`/prefix"
